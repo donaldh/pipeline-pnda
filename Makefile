@@ -3,7 +3,7 @@ build:	## Build the pipeline docker image
 	docker build -t pipeline docker
 
 run:	## Start the pipeline container
-	docker run -d --net=host --volume data:/data --name pipeline pipeline
+	docker run -d --net=host --volume $(PWD)/data:/data --name pipeline pipeline
 
 stop:	## Stop the pipeline container
 	docker kill pipeline
