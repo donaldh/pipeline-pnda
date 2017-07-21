@@ -47,3 +47,4 @@ VOLUME ["/data"]
 WORKDIR /
 ENTRYPOINT ["/pipeline"]
 CMD ["-log=/data/pipeline.log","-config=/data/pipeline.conf"]
+EXPOSE 57500
